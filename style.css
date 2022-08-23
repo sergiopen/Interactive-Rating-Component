@@ -147,4 +147,7 @@ body{
     .card__container__numbers{
         margin: 0 auto;
     }
+    .cardresult{
+        min-width: 75%;
+    }
 } 
