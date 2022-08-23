@@ -26,7 +26,7 @@ body{
     border-radius: 5%;
     margin: auto;
     background-color: hsl(213, 19%, 18%);
-    padding: 10px 15px;
+    padding: 2rem 0;
 }
 
 .card.active{
@@ -34,40 +34,39 @@ body{
 }
 
 .card__container__star{
-    position: relative;
-    top: 10px;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     margin-left: 1.2rem;
     text-align: center;
-    line-height: 37px;
+    line-height: 40px;
     background-color: hsla(213, 12%, 8%, .3);
     border-radius: 50%;
 }
 
 .card__container__text{
-    margin-left: 1.2rem;
+    margin: 0 1.2rem;
     color: #fff;
 }
 
 .card__sub{
     color: #888;
+    max-width: 95%;
 }
 
 .card__container__numbers{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    margin: 0 1rem;
 }
 
 .card__numbers{
     margin: auto;
     border-radius: 50%;
     background-color: hsla(213, 12%, 8%, .3);
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
     cursor: pointer;
     color: #bbb;
     font-size: 1rem;
@@ -111,6 +110,7 @@ body{
     background-color: hsl(213, 19%, 18%);
     padding: 50px 25px 25px 25px;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .cardresult__result{
@@ -133,4 +133,15 @@ body{
 
 .cardresult.active{
     display: block;    
+}
+
+@media screen and (max-width: 600px){
+    .card__container__text{
+        margin: 0 1.2rem;
+        text-align: center;
+        color: #fff;
+    }
+    .card__container__numbers{
+        margin: 0 auto;
+    }
 }
