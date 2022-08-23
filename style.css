@@ -135,7 +135,10 @@ body{
     display: block;    
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 525px){
+    .card{
+        min-width: 75%;
+    }
     .card__container__text{
         margin: 0 1.2rem;
         text-align: center;
@@ -144,4 +147,4 @@ body{
     .card__container__numbers{
         margin: 0 auto;
     }
-}
+} 
